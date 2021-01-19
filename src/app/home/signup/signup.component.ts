@@ -54,7 +54,9 @@ export class SignUpComponent implements OnInit {
         ]
       ]
     });
+  }
 
+  ngAfterViewInit() {
     this.platformDetectorService.isPlatformBrowser() &&
     this.emailInput.nativeElement.focus();
   }
